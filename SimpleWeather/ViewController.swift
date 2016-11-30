@@ -35,7 +35,10 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     @IBAction func getWeather() {
-        WeatherService().weatherForCity(city: cityField.text!) { result in
+        guard let city = cityField.text, city != "" else {
+            return
+        }
+        WeatherService().weatherForCity(city: city) { result in
             DispatchQueue.main.async { self.processResult(result: result) }
         }
     }
