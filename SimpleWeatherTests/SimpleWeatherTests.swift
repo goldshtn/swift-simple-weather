@@ -15,7 +15,7 @@ class SimpleWeatherTests: XCTestCase {
     
     func testParseNonJsonString() {
         let data = "Just a plain error".data(using: String.Encoding.utf8)!
-        guard case .Error = service.weatherFromJsonData(city: "Tel Aviv", data: data) else {
+        guard case .Error = service.weather(forCity: "London", fromJsonData: data) else {
             XCTFail("Couldn't recognize malformed JSON response")
             return
         }
@@ -23,7 +23,7 @@ class SimpleWeatherTests: XCTestCase {
     
     func testParseJsonWithoutExpectedValues() {
         let data = "{ \"foo\": 42.0, \"main\": \"hello\" }".data(using: String.Encoding.utf8)!
-        guard case .Error = service.weatherFromJsonData(city: "Tel Aviv", data: data) else {
+        guard case .Error = service.weather(forCity: "London", fromJsonData: data) else {
             XCTFail("Couldn't recognize malformed JSON response")
             return
         }
@@ -31,7 +31,7 @@ class SimpleWeatherTests: XCTestCase {
     
     func testParseValidJson() {
         let data = "{\"weather\":[{\"description\":\"mist\"}],\"main\":{\"temp\":268.83,\"humidity\":92}}".data(using: String.Encoding.utf8)!
-        guard case let .Success(conditions) = service.weatherFromJsonData(city: "London", data: data) else {
+        guard case let .Success(conditions) = service.weather(forCity: "London", fromJsonData: data) else {
             XCTFail("Valid JSON was not parsed successfully")
             return
         }

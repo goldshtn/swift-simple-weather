@@ -20,29 +20,29 @@ enum WeatherResult {
     case Error(String)
 }
 
+fileprivate let API_KEY = "51174bce8f4a02feb1551c3b7485e95a"
+fileprivate let BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
+
 class WeatherService {
     
-    private let API_KEY = "51174bce8f4a02feb1551c3b7485e95a"
-    private let BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
-    
-    func weatherForCity(city: String, callback: @escaping (WeatherResult) -> Void) {
+    func weather(forCity city: String, completionHandler: @escaping (WeatherResult) -> Void) {
         let escapedCity = city.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         let url = URL(string: "\(BASE_URL)?q=\(escapedCity)&appid=\(API_KEY)")!
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
-                callback(.Error(error.localizedDescription))
+                completionHandler(.Error(error.localizedDescription))
                 return
             }
             guard let data = data else {
-                callback(.Error("No data received"))
+                completionHandler(.Error("No data received"))
                 return
             }
-            callback(self.weatherFromJsonData(city: city, data: data))
+            completionHandler(self.weather(forCity: city, fromJsonData: data))
         }
         task.resume()
     }
     
-    func weatherFromJsonData(city: String, data: Data) -> WeatherResult {
+    func weather(forCity city: String, fromJsonData data: Data) -> WeatherResult {
         let raw = try? JSONSerialization.jsonObject(with: data, options: [])
         guard let json = raw as? [String: AnyObject],
               let weather = json["weather"] as? [AnyObject],

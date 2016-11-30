@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var cityField: UITextField!
     @IBOutlet weak var resultsTable: UITableView!
     
+    private let userDefaults = AppUserDefaults()
     private var results = [WeatherResult]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,9 +39,10 @@ class ViewController: UIViewController, UITableViewDataSource {
         guard let city = cityField.text, city != "" else {
             return
         }
-        WeatherService().weatherForCity(city: city) { result in
+        WeatherService().weather(forCity: city) { result in
             DispatchQueue.main.async { self.processResult(result: result) }
         }
+        userDefaults.saveLastCity(city)
     }
     
     private func processResult(result: WeatherResult) {
@@ -51,6 +53,11 @@ class ViewController: UIViewController, UITableViewDataSource {
         }
         results.append(result)
         resultsTable.insertRows(at: [IndexPath(row: self.results.count - 1, section: 0)], with: .bottom)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        cityField.text = userDefaults.lastCity()
     }
 
 }
