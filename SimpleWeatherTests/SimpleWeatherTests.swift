@@ -11,26 +11,34 @@ import XCTest
 
 class SimpleWeatherTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    private let service = WeatherService()
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testParseNonJsonString() {
+        let data = "Just a plain error".data(using: String.Encoding.utf8)!
+        guard case .Error = service.weatherFromJsonData(city: "Tel Aviv", data: data) else {
+            XCTFail("Couldn't recognize malformed JSON response")
+            return
         }
+    }
+    
+    func testParseJsonWithoutExpectedValues() {
+        let data = "{ \"foo\": 42.0, \"main\": \"hello\" }".data(using: String.Encoding.utf8)!
+        guard case .Error = service.weatherFromJsonData(city: "Tel Aviv", data: data) else {
+            XCTFail("Couldn't recognize malformed JSON response")
+            return
+        }
+    }
+    
+    func testParseValidJson() {
+        let data = "{\"weather\":[{\"description\":\"mist\"}],\"main\":{\"temp\":268.83,\"humidity\":92}}".data(using: String.Encoding.utf8)!
+        guard case let .Success(conditions) = service.weatherFromJsonData(city: "London", data: data) else {
+            XCTFail("Valid JSON was not parsed successfully")
+            return
+        }
+        XCTAssertEqual(92, conditions.humidityPercent)
+        XCTAssertEqualWithAccuracy(268.83-273.15, conditions.temperatureCelsius, accuracy: 0.01)
+        XCTAssertEqual("mist", conditions.generalDescription)
+        XCTAssertEqual("London", conditions.city)
     }
     
 }

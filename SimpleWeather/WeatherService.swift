@@ -42,8 +42,8 @@ class WeatherService {
         task.resume()
     }
     
-    private func weatherFromJsonData(city: String, data: Data) -> WeatherResult {
-        let raw = try! JSONSerialization.jsonObject(with: data, options: [])
+    func weatherFromJsonData(city: String, data: Data) -> WeatherResult {
+        let raw = try? JSONSerialization.jsonObject(with: data, options: [])
         guard let json = raw as? [String: AnyObject],
               let weather = json["weather"] as? [AnyObject],
               let descriptionObj = weather[0] as? [String: AnyObject],
