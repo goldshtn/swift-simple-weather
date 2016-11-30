@@ -8,18 +8,47 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var cityField: UITextField!
+    @IBOutlet weak var resultsTable: UITableView!
+    
+    private var results = [WeatherResult]()
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return results.count
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "result_cell", for: indexPath)
+        let result = results[indexPath.row]
+        switch result {
+        case .Error(let error):
+            cell.textLabel?.text = "Error"
+            cell.detailTextLabel?.text = error
+        case .Success(let conditions):
+            let formattedTemperature = String(format: "%.2f", conditions.temperatureCelsius)
+            cell.textLabel?.text = "\(conditions.generalDescription.capitalized) in \(conditions.city)"
+            cell.detailTextLabel?.text = "\(formattedTemperature)℃, \(conditions.humidityPercent)% humidity"
+        }
+        return cell
     }
-
+    
+    @IBAction func getWeather() {
+        WeatherService().weatherForCity(city: cityField.text!) { result in
+            DispatchQueue.main.async { self.processResult(result: result) }
+        }
+    }
+    
+    private func processResult(result: WeatherResult) {
+        if case let .Error(error) = result {
+            let alert = UIAlertController(title: "Error", message: "An error occurred while fetching weather information.\n\(error)", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        results.append(result)
+        resultsTable.insertRows(at: [IndexPath(row: self.results.count - 1, section: 0)], with: .bottom)
+    }
 
 }
 

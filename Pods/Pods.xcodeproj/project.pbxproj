@@ -1,0 +1,1585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01372A113D4D24F730470D48C72D3AD6 /* GCDWebServerMultiPartFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18642257A3432FBDA403B8A0586152D6 /* GCDWebServerMultiPartFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04060C681A462B9520F3103D8E10543C /* GCDWebServerErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B41DADC1F3B0D196A05A42F6B5BB945B /* GCDWebServerErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		096BDE84E1D7D4886E15C3308601210C /* NSString+SwiftDemangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1654C2E3D62A10B52DB826BBB746F159 /* NSString+SwiftDemangle.m */; };
+		0C88FF55715753F0B53DBC6D4061AA16 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E9026071339923AEDD3F68B684804E6C /* GCDWebServerResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		115713603CE384804271BA83AD8D8F36 /* NSURLSession+HTTPBodyFix.h in Headers */ = {isa = PBXBuildFile; fileRef = D59604DEB80BEA0A2CB097261537ED75 /* NSURLSession+HTTPBodyFix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1350E334B7957E816F08653F32E8997E /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2263591F77E271F28BDA792A02344328 /* GCDWebServerConnection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1641A5DFD4CC388CE8E4613485E69275 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7652E2BDBCB885B319EA91ED1523EBA /* Foundation.framework */; };
+		17DD22117BE7C1158B912E08F734BE23 /* SBTSwizzleHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C13437532A87695F594D0AFD72BC36 /* SBTSwizzleHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19308D893669B632EBED348D089628D1 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 179B3BE97D65B841F676613032ACE484 /* GCDWebServerFunctions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		19AF3610072169E5C7A80B92915E3273 /* GCDWebServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B5B97D31BEEC8A9518303CEA224A68B /* GCDWebServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E12CB105BA12D1CD257F3486C7D4C1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7652E2BDBCB885B319EA91ED1523EBA /* Foundation.framework */; };
+		1E8416163C887D4F2CD124050C6D8879 /* SBTSwizzleHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C13437532A87695F594D0AFD72BC36 /* SBTSwizzleHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		205603C85460ED99178B1A903B284AF8 /* NSData+SHA1.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6F2A4B300058DBF8EA2EDF23A4E146 /* NSData+SHA1.m */; };
+		23C1F1F165AF50E9E79AE4C5562BC134 /* GCDWebServer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77792B38246C6B0AA1F3D34442B29601 /* GCDWebServer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2436F2B2CA7623C3BEB9B7862FF3840B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C33503FCC9F57319CF0C6C72EFA218 /* XCTest.framework */; };
+		24C71909F6A871A33AF508921A9478AB /* NSString+SwiftDemangle.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A892FA90C7B3026B028BE18C680C74 /* NSString+SwiftDemangle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25E862C753D24A047C258F8122407E8F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB28FFB69F2EF243B5330C988A114D29 /* Security.framework */; };
+		29BEA4AD73BAA9F2002AFB5B262D61A8 /* NSURLSessionConfiguration+SBTUITestTunnel.m in Sources */ = {isa = PBXBuildFile; fileRef = 856E21A9BA9C94009887201D61BBC464 /* NSURLSessionConfiguration+SBTUITestTunnel.m */; };
+		2CA7DBDB5EB6F59B550F550606FC4BB2 /* GCDWebServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1DA34D7B4607BADF2E4F2C9AD3124D /* GCDWebServer.framework */; };
+		2CEB62A439BB92315140F2BB44676F5C /* SBTProxyURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 195D12440ADADEC4ABE71A63C35D7931 /* SBTProxyURLProtocol.m */; };
+		2E7830EAF098D5FD1B455799E6652098 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C393E1503B8DF0A8A0ABF6EEAF953FF2 /* GCDWebServerMultiPartFormRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		34AEF0B2B90403B9F0EB88F98317C447 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7652E2BDBCB885B319EA91ED1523EBA /* Foundation.framework */; };
+		37BCAD3D3B0579A308BF2C99A6B936DD /* SBTUITestTunnel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF81157E644B46699E5CD5708CC1C980 /* SBTUITestTunnel.m */; };
+		3C9234AFD748DE044C4451441152555D /* GCDWebServerFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 677E3D66C418BB34232603156D5D9527 /* GCDWebServerFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CE2BDF865EAF4AB9E1430F3223BA3C0 /* SBTUITestTunnel-Server-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4076658BD5CC3295C8CC06E4F42EEA32 /* SBTUITestTunnel-Server-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DD19ACB6E7C32E62DC7DA09BD06C0F5 /* NSURLRequest+HTTPBodyFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BA401BF0594EC5C7D5AEF2246C705A /* NSURLRequest+HTTPBodyFix.m */; };
+		3E54C20F7DED0239E1894B520085C83C /* Pods-SimpleWeather-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2CF4AAFE8D35AD543DA6C4A6670F3E2 /* Pods-SimpleWeather-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42D43630B2DE8156AD386F1227CEC20A /* FXKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B752BC7FAC42CA11DA3FE36E7EFB588 /* FXKeychain.framework */; };
+		45B1AC6D576F206689D6606D1D640129 /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 51382BFEDC04A4DD4D42BFCCF74B4B2B /* GCDWebServerFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45D6A2EA63E73B5AEE717AA79D76ED66 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 711888B60CFD985BE6B47E693B33FBE4 /* GCDWebServerFileRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		47016A24C4A1376D557F37F5E1C28CC7 /* UITextField+DisableAutocomplete.h in Headers */ = {isa = PBXBuildFile; fileRef = 37DD753C5231FB91DBDA3289798422AE /* UITextField+DisableAutocomplete.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		490707551020CD8DD277EFD3707D4B57 /* NSURLRequest+SBTUITestTunnelMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2BFB89DAA28E5878148D7633148DA /* NSURLRequest+SBTUITestTunnelMatch.m */; };
+		493200821CE09E919FD3371910BE497A /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C07579B1BEF19A27F3D74355B51E9307 /* GCDWebServerURLEncodedFormRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4AB151F6A014EFC261624FEDB67F4624 /* SBTUITestTunnel-Client-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFB2C0E7E396D86402A2B19197EF24A /* SBTUITestTunnel-Client-dummy.m */; };
+		4CC34558D46CFBE6B6D14B21E8FC07A1 /* SBTUITestTunnel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF81157E644B46699E5CD5708CC1C980 /* SBTUITestTunnel.m */; };
+		4FCFA28632F1BFBF75EDADD5AE07B945 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3610B7D1A24C2BC1AEFA07078AB49248 /* UIKit.framework */; };
+		5147E3DA86BA0E51E9020928EBA890CC /* FXKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A2771474E8CD7E4787D3F038F1768 /* FXKeychain-dummy.m */; };
+		52BB0F9E7DA50FFB2B1103F460D4C398 /* SBTUITunneledApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E40F31D36A2C5EEB47EE047EAE4B58A /* SBTUITunneledApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52E0913D40B5570029F96DCA84F0B3C0 /* Pods-SimpleWeather-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F616C2BD9A5150B5EAAC2166CB8040DB /* Pods-SimpleWeather-dummy.m */; };
+		53361C56003E41433F5CE431BADE29AB /* NSURLSessionConfiguration+SBTUITestTunnel.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA98FF900DAA1CB5B0353F8DCCC7914 /* NSURLSessionConfiguration+SBTUITestTunnel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CA9DD13C3DA6D80F706F427B3E69A4E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C0AAD81DC956DCE7B704471F196115 /* CFNetwork.framework */; };
+		5D5B87D738C8E66BC386C64AC16E258D /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 31749609AE28F7CF89ED610D676F1BD0 /* GCDWebServerPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		61C1B02BAF0D8BF621E907F8928B4E25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7652E2BDBCB885B319EA91ED1523EBA /* Foundation.framework */; };
+		679EADE89CB2C6AA8C9C0597BFA4ED8C /* SBTProxyURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC2576C082A4130ADE8CCE071439D19 /* SBTProxyURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6855FCB86EFD12CAB904826958A3BDB9 /* NSData+SHA1.h in Headers */ = {isa = PBXBuildFile; fileRef = C735DEF173E055E4E13EB6AFF619C6BF /* NSData+SHA1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A9AF44F611346E83CF1BFFB212AD5F4 /* SBTUITestTunnelServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E33A87EB0ED2C0A4C6768B0BFCCB91B0 /* SBTUITestTunnelServer.m */; };
+		71AB4705D4C7DC6239FD354E165CFA6F /* GCDWebServerFileRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B489C51D57E611AC75FD4F3A3CA5B7C8 /* GCDWebServerFileRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B0FB7F36A0F9F654AA8F7462C7F42AD /* GCDWebServerDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1637936C9160E5047B82791E50E31994 /* GCDWebServerDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8525D3F0B3825219D335DA68D211FACA /* GCDWebServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FBA537C98ED95E7738A1ABCFE10E4E /* GCDWebServerRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87DDC1D35ED4C15DF5E36B9EC4801848 /* GCDWebServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683EA9A6D024609D1CBCB515B80D3EF /* GCDWebServer-dummy.m */; };
+		8C9290C1ACDB58769795B9C775ACFB6B /* Pods-SimpleWeatherTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 421706E630A32D44B375ED9B20B1D025 /* Pods-SimpleWeatherTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9173D385DF60D15EB25AADA2CC67E5D0 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 38944C103B4520A36BF860EF67794CE8 /* GCDWebServer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9374EC176619D9847D2426DF28E8A00A /* GCDWebServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA57056479E3EA8F401165D2E298FE9 /* GCDWebServerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98A9D14DA92148B8437097DCCD68E9BD /* FXKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 154D5F487BFD684DC4093492675F75E5 /* FXKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		996F3401A7CF59D71599EEA9A1A0FF2C /* NSURLRequest+SBTUITestTunnelMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2BFB89DAA28E5878148D7633148DA /* NSURLRequest+SBTUITestTunnelMatch.m */; };
+		9C8F47A878355CE7939BA0D5DF09343A /* SBTUITestTunnel-Server-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD052261832FF6B6ACD05CA5F5B334D /* SBTUITestTunnel-Server-dummy.m */; };
+		A0918E9FA6D263258652239D2AFB816A /* GCDWebServerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A0477BCA2C87FD30D0188B3AA13C68 /* GCDWebServerDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A52F3E771F89EB74DB20E3974B996C05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7652E2BDBCB885B319EA91ED1523EBA /* Foundation.framework */; };
+		A5B8084A1723A014EA1F1F409FB20811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7652E2BDBCB885B319EA91ED1523EBA /* Foundation.framework */; };
+		A79D8CFCAE534CB8C205088C3C6BA93C /* NSURLRequest+HTTPBodyFix.h in Headers */ = {isa = PBXBuildFile; fileRef = A79919618476E25B562A2F6CC238C58A /* NSURLRequest+HTTPBodyFix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A96E949DE9327C7262D262317429D84D /* Pods-SimpleWeatherUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E23DEB8894B89B378DCC63CC06F1F6D /* Pods-SimpleWeatherUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A97DEF8A0D6F7C8CF3980E6FB600DE24 /* UITextField+DisableAutocomplete.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F4D1CB97B0493040AF9DDFB185AAA9 /* UITextField+DisableAutocomplete.m */; };
+		AA85434990510BB89681DC8D990455CC /* SBTUITestTunnel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F1876E03DAE0682DF5C06F8E7271548 /* SBTUITestTunnel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA9131066F17ABA0650142856587BD74 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F55E1605B4F69F915F24B81F0B4F5F /* GCDWebServerErrorResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ACFB28B4A8B2AC5120DE00315A37FF22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7652E2BDBCB885B319EA91ED1523EBA /* Foundation.framework */; };
+		B1C0B0DFB07DD0DB72AD02923182D671 /* SBTProxyStubResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA922073050C1E6BEE54C3D2F56059E /* SBTProxyStubResponse.m */; };
+		B46E9A3339883C2E91A703BBE41A9DD1 /* GCDWebServerURLEncodedFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 266140277E59EC0D1FA55601E463E2EB /* GCDWebServerURLEncodedFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDC99F57040DDE7D159CB35F423F926D /* SBTProxyStubResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = A00D1D1845EFDF50F06C5F192C37839A /* SBTProxyStubResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C07D4685F8C7E7F512285437BC23E056 /* SBTUITestTunnel-Client-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9BB5F88FF500F95E18BC5977DF837B4 /* SBTUITestTunnel-Client-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C32E20DFB55C5E59443179FEDB888929 /* NSURLRequest+HTTPBodyFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BA401BF0594EC5C7D5AEF2246C705A /* NSURLRequest+HTTPBodyFix.m */; };
+		C98EB123870A1F48C40F6F80B595DF28 /* GCDWebServerHTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = A91CAEF9E6BF2C33934BF0D029D28078 /* GCDWebServerHTTPStatusCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA97C70EF4E8B8225A26F17A566B6EEF /* NSURLSession+HTTPBodyFix.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E6ED94E5CA4E7888E4ECA8274FD861 /* NSURLSession+HTTPBodyFix.m */; };
+		CEA10105CC29963377989035EF5C43C8 /* SBTUITunneledApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = A5997DA3F0104D7658E361D59F5DBA55 /* SBTUITunneledApplication.m */; };
+		CF1B9BAC37B0C927330B5C7254E113CE /* GCDWebServerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C292B96BF9A258732781AA9CF473ED /* GCDWebServerConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFDB74CD4D874F1C4875390B66DDAAE8 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5467723B2606BD27E97713B425F599 /* GCDWebServerStreamedResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D135BF17BF334ED905C703505250F777 /* GCDWebServerStreamedResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E192D45D65FC093750E36BAB173BC62E /* GCDWebServerStreamedResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2C5094635552F2D5EFDB8C9787AE4A7 /* NSURLRequest+SBTUITestTunnelMatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F99F6A008E6B525F89C2D34E089970 /* NSURLRequest+SBTUITestTunnelMatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2E938C2653A3E1055C9FF126AFAA2EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3610B7D1A24C2BC1AEFA07078AB49248 /* UIKit.framework */; };
+		D69AC9CEAB1CC850310B9B4DFEFBF863 /* SBTUITestTunnel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F1876E03DAE0682DF5C06F8E7271548 /* SBTUITestTunnel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6E202D02C2A98C37BEE46FF6CA6BF6E /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0A45C022D9013748072DF8340B1410 /* GCDWebServerDataRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DCA903860305E68B935C9B2CE0354B31 /* FXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA9FA5FB402A390E8153473554AB29E /* FXKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E89F8BEF86E107B8A31F63C7CBC0DF71 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D471FCC2119B73064D3246DD58304A2 /* MobileCoreServices.framework */; };
+		F11FD859C263C8014A3F5940C62C9E0F /* NSURLRequest+HTTPBodyFix.h in Headers */ = {isa = PBXBuildFile; fileRef = A79919618476E25B562A2F6CC238C58A /* NSURLRequest+HTTPBodyFix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F20B48EC0E935BFAF58FC7DE51E22D80 /* Pods-SimpleWeatherTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50233708B101AB00723453C6C0588E9D /* Pods-SimpleWeatherTests-dummy.m */; };
+		F5A1A85EC30C828DF8DBCB65837C29FE /* Pods-SimpleWeatherUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7610BC3C3B3DC061BD844248742A9400 /* Pods-SimpleWeatherUITests-dummy.m */; };
+		F854FD81B447DE7DE98EFA7B2A5E506B /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FBF531E027E14D4A9998E34767C6FB /* GCDWebServerDataResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F8975051295364E3D166CB71CF96F185 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DB1897E2333DEF80639102D610DC68 /* GCDWebServerRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F89BEC81BC71738C536C0265276D0766 /* NSURLRequest+SBTUITestTunnelMatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F99F6A008E6B525F89C2D34E089970 /* NSURLRequest+SBTUITestTunnelMatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F96DC4CAE759958473E965A9DDD68A49 /* SBTUITestTunnelServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 27FE2108D0CEE793BB5201C44A82CE4B /* SBTUITestTunnelServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F97971B21A6C2E01607914244C35C518 /* FXKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A057D39E043ED0D950C9241698EF8394 /* FXKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBB491C9255AF72A742A73DB44770FDB /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF16DF4890AFBFD924C8DF31A730B38 /* GCDWebServerFileResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07A152D201C4B791D7D126EE10CD02BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48CE9B7163691C8A15946ED19A8B1400;
+			remoteInfo = "SBTUITestTunnel-Client";
+		};
+		AC9746EAF9DCAB3BC82F96BACF1AA4C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324F18602D5EF57D0C85927813C44D87;
+			remoteInfo = GCDWebServer;
+		};
+		BF01DC9AD526F98E27CF1DC02D49A914 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9CA61A9740FC65B150A9AEB6404D828;
+			remoteInfo = FXKeychain;
+		};
+		CDC96F2373D98E50773D0EBFC479FDA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9CA61A9740FC65B150A9AEB6404D828;
+			remoteInfo = FXKeychain;
+		};
+		DB8800BE28F27FBE59809B11F29BFBFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EAC923F6612C22C17B5E684054D3625;
+			remoteInfo = "SBTUITestTunnel-Server";
+		};
+		DDE51C1FB9F87AB8DCFDDB80ADD9B191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324F18602D5EF57D0C85927813C44D87;
+			remoteInfo = GCDWebServer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00DB1897E2333DEF80639102D610DC68 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerRequest.m; path = GCDWebServer/Core/GCDWebServerRequest.m; sourceTree = "<group>"; };
+		036F514E6A66917B5F55E7267CD4D81D /* SBTUITestTunnel-Client-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SBTUITestTunnel-Client-prefix.pch"; sourceTree = "<group>"; };
+		049BD2582A0607EC824D0BD9A32C4EF4 /* Pods-SimpleWeather-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleWeather-acknowledgements.markdown"; sourceTree = "<group>"; };
+		06E7B32D3CE0684E01F43C65FAC5C9A5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08DA72D60D2ED7B09C5FDA7C8596C5A1 /* SBTUITestTunnel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBTUITestTunnel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08FBA537C98ED95E7738A1ABCFE10E4E /* GCDWebServerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerRequest.h; path = GCDWebServer/Core/GCDWebServerRequest.h; sourceTree = "<group>"; };
+		0EA922073050C1E6BEE54C3D2F56059E /* SBTProxyStubResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBTProxyStubResponse.m; path = Pod/Server/SBTProxyStubResponse.m; sourceTree = "<group>"; };
+		154D5F487BFD684DC4093492675F75E5 /* FXKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXKeychain.h; path = FXKeychain/FXKeychain.h; sourceTree = "<group>"; };
+		1637936C9160E5047B82791E50E31994 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataResponse.h; path = GCDWebServer/Responses/GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		1654C2E3D62A10B52DB826BBB746F159 /* NSString+SwiftDemangle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SwiftDemangle.m"; path = "Pod/Client/NSString+SwiftDemangle.m"; sourceTree = "<group>"; };
+		1683EA9A6D024609D1CBCB515B80D3EF /* GCDWebServer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCDWebServer-dummy.m"; sourceTree = "<group>"; };
+		179B3BE97D65B841F676613032ACE484 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFunctions.m; path = GCDWebServer/Core/GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		17BDFEA98D8BE9CDCC5D574F89806EB9 /* Pods-SimpleWeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleWeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		17DD257EEF059506B1BBC89188FA11D2 /* SBTUITestTunnel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBTUITestTunnel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18642257A3432FBDA403B8A0586152D6 /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerMultiPartFormRequest.h; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		1906564F436F064701BC5A29E8BCF87F /* Pods_SimpleWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		195D12440ADADEC4ABE71A63C35D7931 /* SBTProxyURLProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBTProxyURLProtocol.m; path = Pod/Server/SBTProxyURLProtocol.m; sourceTree = "<group>"; };
+		19C33503FCC9F57319CF0C6C72EFA218 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1B4682E2B40C5C33434397B03777C2F4 /* Pods-SimpleWeatherUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleWeatherUITests-resources.sh"; sourceTree = "<group>"; };
+		1D471FCC2119B73064D3246DD58304A2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		2263591F77E271F28BDA792A02344328 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerConnection.m; path = GCDWebServer/Core/GCDWebServerConnection.m; sourceTree = "<group>"; };
+		23C0AAD81DC956DCE7B704471F196115 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		24D1998CE16F2152699DE0BF9A59A489 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24E7BAF9AE16382F243ACEB9BA5FA4D7 /* Pods-SimpleWeather-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleWeather-acknowledgements.plist"; sourceTree = "<group>"; };
+		266140277E59EC0D1FA55601E463E2EB /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerURLEncodedFormRequest.h; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		26FBF531E027E14D4A9998E34767C6FB /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataResponse.m; path = GCDWebServer/Responses/GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		27E5CCF7C34DDF85ABB5F717AFD3A977 /* Pods-SimpleWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		27FE2108D0CEE793BB5201C44A82CE4B /* SBTUITestTunnelServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBTUITestTunnelServer.h; path = Pod/Server/SBTUITestTunnelServer.h; sourceTree = "<group>"; };
+		29EC696413EDC80E499D4952E89AC8D4 /* Pods-SimpleWeatherUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SimpleWeatherUITests.modulemap"; sourceTree = "<group>"; };
+		2DA57056479E3EA8F401165D2E298FE9 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerResponse.h; path = GCDWebServer/Core/GCDWebServerResponse.h; sourceTree = "<group>"; };
+		315551E71C2D12BBE05514087B7EA067 /* GCDWebServer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-prefix.pch"; sourceTree = "<group>"; };
+		31749609AE28F7CF89ED610D676F1BD0 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerPrivate.h; path = GCDWebServer/Core/GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		3394864C036E95B8F74725D6E8E19169 /* FXKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FXKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A0477BCA2C87FD30D0188B3AA13C68 /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataRequest.h; path = GCDWebServer/Requests/GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		3610B7D1A24C2BC1AEFA07078AB49248 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		36BA401BF0594EC5C7D5AEF2246C705A /* NSURLRequest+HTTPBodyFix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+HTTPBodyFix.m"; path = "Pod/Common/NSURLRequest+HTTPBodyFix.m"; sourceTree = "<group>"; };
+		36F99F6A008E6B525F89C2D34E089970 /* NSURLRequest+SBTUITestTunnelMatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+SBTUITestTunnelMatch.h"; path = "Pod/Common/NSURLRequest+SBTUITestTunnelMatch.h"; sourceTree = "<group>"; };
+		37DD753C5231FB91DBDA3289798422AE /* UITextField+DisableAutocomplete.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+DisableAutocomplete.h"; path = "Pod/Server/UITextField+DisableAutocomplete.h"; sourceTree = "<group>"; };
+		37DE303E171207F31C2418FA39D63AE9 /* Pods_SimpleWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38944C103B4520A36BF860EF67794CE8 /* GCDWebServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServer.m; path = GCDWebServer/Core/GCDWebServer.m; sourceTree = "<group>"; };
+		3D091B5FC408F14FAF1381C73BB35A3E /* SBTUITestTunnel-Server.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "SBTUITestTunnel-Server.modulemap"; path = "../SBTUITestTunnel-Server/SBTUITestTunnel-Server.modulemap"; sourceTree = "<group>"; };
+		3E40F31D36A2C5EEB47EE047EAE4B58A /* SBTUITunneledApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBTUITunneledApplication.h; path = Pod/Client/SBTUITunneledApplication.h; sourceTree = "<group>"; };
+		4076658BD5CC3295C8CC06E4F42EEA32 /* SBTUITestTunnel-Server-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SBTUITestTunnel-Server-umbrella.h"; path = "../SBTUITestTunnel-Server/SBTUITestTunnel-Server-umbrella.h"; sourceTree = "<group>"; };
+		4103A7043731208427C4EF735E2A5624 /* Pods-SimpleWeatherTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleWeatherTests-resources.sh"; sourceTree = "<group>"; };
+		421706E630A32D44B375ED9B20B1D025 /* Pods-SimpleWeatherTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleWeatherTests-umbrella.h"; sourceTree = "<group>"; };
+		437A8BF7679F55380E71C414638124EA /* SBTUITestTunnel-Client.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "SBTUITestTunnel-Client.modulemap"; sourceTree = "<group>"; };
+		4E23DEB8894B89B378DCC63CC06F1F6D /* Pods-SimpleWeatherUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleWeatherUITests-umbrella.h"; sourceTree = "<group>"; };
+		4F1876E03DAE0682DF5C06F8E7271548 /* SBTUITestTunnel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBTUITestTunnel.h; path = Pod/Common/SBTUITestTunnel.h; sourceTree = "<group>"; };
+		50233708B101AB00723453C6C0588E9D /* Pods-SimpleWeatherTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleWeatherTests-dummy.m"; sourceTree = "<group>"; };
+		51382BFEDC04A4DD4D42BFCCF74B4B2B /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFunctions.h; path = GCDWebServer/Core/GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		515BDC8B9512E95D966F801DA11AF0E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../SBTUITestTunnel-Server/Info.plist"; sourceTree = "<group>"; };
+		516A2771474E8CD7E4787D3F038F1768 /* FXKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FXKeychain-dummy.m"; sourceTree = "<group>"; };
+		5A6F2A4B300058DBF8EA2EDF23A4E146 /* NSData+SHA1.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+SHA1.m"; path = "Pod/Server/NSData+SHA1.m"; sourceTree = "<group>"; };
+		60E83A51BA4728874E79713F4D19C810 /* GCDWebServer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GCDWebServer.modulemap; sourceTree = "<group>"; };
+		624D79CFDD705CA2B4866C989898CC93 /* Pods-SimpleWeatherUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleWeatherUITests-frameworks.sh"; sourceTree = "<group>"; };
+		63956D076E861DF9C91A36385ADDAC86 /* Pods-SimpleWeather.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SimpleWeather.modulemap"; sourceTree = "<group>"; };
+		677E3D66C418BB34232603156D5D9527 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileResponse.h; path = GCDWebServer/Responses/GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		6B752BC7FAC42CA11DA3FE36E7EFB588 /* FXKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FXKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EC2576C082A4130ADE8CCE071439D19 /* SBTProxyURLProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBTProxyURLProtocol.h; path = Pod/Server/SBTProxyURLProtocol.h; sourceTree = "<group>"; };
+		70F55E1605B4F69F915F24B81F0B4F5F /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerErrorResponse.m; path = GCDWebServer/Responses/GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		711888B60CFD985BE6B47E693B33FBE4 /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileRequest.m; path = GCDWebServer/Requests/GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		7610BC3C3B3DC061BD844248742A9400 /* Pods-SimpleWeatherUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleWeatherUITests-dummy.m"; sourceTree = "<group>"; };
+		76A0FD5F16FFF6CB21074D135CEA8F1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76C13437532A87695F594D0AFD72BC36 /* SBTSwizzleHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBTSwizzleHelpers.h; path = Pod/Common/SBTSwizzleHelpers.h; sourceTree = "<group>"; };
+		77792B38246C6B0AA1F3D34442B29601 /* GCDWebServer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-umbrella.h"; sourceTree = "<group>"; };
+		7CF13FCB9B3E8B30B397D359BCA464CB /* FXKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FXKeychain.xcconfig; sourceTree = "<group>"; };
+		7FE2830096D6C0CFCB005011E6AAAE89 /* Pods-SimpleWeather-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleWeather-frameworks.sh"; sourceTree = "<group>"; };
+		805B082A314292A4E02969F03E6D5C7A /* Pods-SimpleWeatherUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleWeatherUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		856E21A9BA9C94009887201D61BBC464 /* NSURLSessionConfiguration+SBTUITestTunnel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSessionConfiguration+SBTUITestTunnel.m"; path = "Pod/Server/NSURLSessionConfiguration+SBTUITestTunnel.m"; sourceTree = "<group>"; };
+		85C292B96BF9A258732781AA9CF473ED /* GCDWebServerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerConnection.h; path = GCDWebServer/Core/GCDWebServerConnection.h; sourceTree = "<group>"; };
+		8677E9753FBB1457DBDEB84E3C67668B /* Pods_SimpleWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1DA34D7B4607BADF2E4F2C9AD3124D /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A5DBF4E240504BF90A9EF3C0101B61 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		953E226628E5A68E439BF9BD87D80891 /* Pods-SimpleWeatherTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SimpleWeatherTests.modulemap"; sourceTree = "<group>"; };
+		96A931B8FECFC91A11F9CFE1B1343665 /* GCDWebServer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCDWebServer.xcconfig; sourceTree = "<group>"; };
+		9B5B97D31BEEC8A9518303CEA224A68B /* GCDWebServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServer.h; path = GCDWebServer/Core/GCDWebServer.h; sourceTree = "<group>"; };
+		9EF16DF4890AFBFD924C8DF31A730B38 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileResponse.m; path = GCDWebServer/Responses/GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		9FA31AD86397EEA5E8CDB4A16D4B7D8B /* Pods-SimpleWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleWeather.release.xcconfig"; sourceTree = "<group>"; };
+		A00D1D1845EFDF50F06C5F192C37839A /* SBTProxyStubResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBTProxyStubResponse.h; path = Pod/Server/SBTProxyStubResponse.h; sourceTree = "<group>"; };
+		A057D39E043ED0D950C9241698EF8394 /* FXKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FXKeychain-umbrella.h"; sourceTree = "<group>"; };
+		A5289AED8837A879455081091E72B902 /* Pods-SimpleWeatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleWeatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5997DA3F0104D7658E361D59F5DBA55 /* SBTUITunneledApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBTUITunneledApplication.m; path = Pod/Client/SBTUITunneledApplication.m; sourceTree = "<group>"; };
+		A79919618476E25B562A2F6CC238C58A /* NSURLRequest+HTTPBodyFix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+HTTPBodyFix.h"; path = "Pod/Common/NSURLRequest+HTTPBodyFix.h"; sourceTree = "<group>"; };
+		A91CAEF9E6BF2C33934BF0D029D28078 /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerHTTPStatusCodes.h; path = GCDWebServer/Core/GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		AB89457271AFB1B2A0A3E3636E100376 /* FXKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FXKeychain.modulemap; sourceTree = "<group>"; };
+		AC65333E84F6D7E3FA13292ECB459B50 /* Pods-SimpleWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
+		AE0A45C022D9013748072DF8340B1410 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataRequest.m; path = GCDWebServer/Requests/GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		AF81157E644B46699E5CD5708CC1C980 /* SBTUITestTunnel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBTUITestTunnel.m; path = Pod/Common/SBTUITestTunnel.m; sourceTree = "<group>"; };
+		B2E677E4D6AC95BF679F2E8A9AFE2BCE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B41DADC1F3B0D196A05A42F6B5BB945B /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerErrorResponse.h; path = GCDWebServer/Responses/GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		B489C51D57E611AC75FD4F3A3CA5B7C8 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileRequest.h; path = GCDWebServer/Requests/GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		B53D1D4CB12D38D5FB8F937915B4F586 /* SBTUITestTunnel-Server.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "SBTUITestTunnel-Server.xcconfig"; path = "../SBTUITestTunnel-Server/SBTUITestTunnel-Server.xcconfig"; sourceTree = "<group>"; };
+		B6E2BFB89DAA28E5878148D7633148DA /* NSURLRequest+SBTUITestTunnelMatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+SBTUITestTunnelMatch.m"; path = "Pod/Common/NSURLRequest+SBTUITestTunnelMatch.m"; sourceTree = "<group>"; };
+		B9BB5F88FF500F95E18BC5977DF837B4 /* SBTUITestTunnel-Client-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SBTUITestTunnel-Client-umbrella.h"; sourceTree = "<group>"; };
+		BAA98FF900DAA1CB5B0353F8DCCC7914 /* NSURLSessionConfiguration+SBTUITestTunnel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSessionConfiguration+SBTUITestTunnel.h"; path = "Pod/Server/NSURLSessionConfiguration+SBTUITestTunnel.h"; sourceTree = "<group>"; };
+		BBA9FA5FB402A390E8153473554AB29E /* FXKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXKeychain.m; path = FXKeychain/FXKeychain.m; sourceTree = "<group>"; };
+		BDFB2C0E7E396D86402A2B19197EF24A /* SBTUITestTunnel-Client-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SBTUITestTunnel-Client-dummy.m"; sourceTree = "<group>"; };
+		BE833B9D97D42172CF143E938283D47B /* Pods-SimpleWeather-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleWeather-resources.sh"; sourceTree = "<group>"; };
+		C07579B1BEF19A27F3D74355B51E9307 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerURLEncodedFormRequest.m; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		C34E7C062955E095EBD795FEB5B7FB3D /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C393E1503B8DF0A8A0ABF6EEAF953FF2 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerMultiPartFormRequest.m; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		C735DEF173E055E4E13EB6AFF619C6BF /* NSData+SHA1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+SHA1.h"; path = "Pod/Server/NSData+SHA1.h"; sourceTree = "<group>"; };
+		C7652E2BDBCB885B319EA91ED1523EBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CB28FFB69F2EF243B5330C988A114D29 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		CF5467723B2606BD27E97713B425F599 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerStreamedResponse.m; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+		CFF8395ACD636EE95DA0AF2A342351BD /* FXKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FXKeychain-prefix.pch"; sourceTree = "<group>"; };
+		D12216D90C54E585911E98307B146FE8 /* Pods-SimpleWeatherTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleWeatherTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D2CF4AAFE8D35AD543DA6C4A6670F3E2 /* Pods-SimpleWeather-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleWeather-umbrella.h"; sourceTree = "<group>"; };
+		D59604DEB80BEA0A2CB097261537ED75 /* NSURLSession+HTTPBodyFix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+HTTPBodyFix.h"; path = "Pod/Server/NSURLSession+HTTPBodyFix.h"; sourceTree = "<group>"; };
+		DAD052261832FF6B6ACD05CA5F5B334D /* SBTUITestTunnel-Server-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SBTUITestTunnel-Server-dummy.m"; path = "../SBTUITestTunnel-Server/SBTUITestTunnel-Server-dummy.m"; sourceTree = "<group>"; };
+		DDE90F7F828D020A2B09ACE8F2A206E4 /* SBTUITestTunnel-Server-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SBTUITestTunnel-Server-prefix.pch"; path = "../SBTUITestTunnel-Server/SBTUITestTunnel-Server-prefix.pch"; sourceTree = "<group>"; };
+		E0E6ED94E5CA4E7888E4ECA8274FD861 /* NSURLSession+HTTPBodyFix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+HTTPBodyFix.m"; path = "Pod/Server/NSURLSession+HTTPBodyFix.m"; sourceTree = "<group>"; };
+		E192D45D65FC093750E36BAB173BC62E /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerStreamedResponse.h; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		E30E07ED4644A1D3C293BCE994AA5598 /* Pods-SimpleWeatherTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleWeatherTests-frameworks.sh"; sourceTree = "<group>"; };
+		E33A87EB0ED2C0A4C6768B0BFCCB91B0 /* SBTUITestTunnelServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBTUITestTunnelServer.m; path = Pod/Server/SBTUITestTunnelServer.m; sourceTree = "<group>"; };
+		E9026071339923AEDD3F68B684804E6C /* GCDWebServerResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerResponse.m; path = GCDWebServer/Core/GCDWebServerResponse.m; sourceTree = "<group>"; };
+		E9FD282583EB38E55D128755B3D3D63E /* Pods-SimpleWeatherUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleWeatherUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F3A892FA90C7B3026B028BE18C680C74 /* NSString+SwiftDemangle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SwiftDemangle.h"; path = "Pod/Client/NSString+SwiftDemangle.h"; sourceTree = "<group>"; };
+		F5F4D1CB97B0493040AF9DDFB185AAA9 /* UITextField+DisableAutocomplete.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+DisableAutocomplete.m"; path = "Pod/Server/UITextField+DisableAutocomplete.m"; sourceTree = "<group>"; };
+		F616C2BD9A5150B5EAAC2166CB8040DB /* Pods-SimpleWeather-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleWeather-dummy.m"; sourceTree = "<group>"; };
+		F6517FE3E1F3B482C0BEFD0D826F5B18 /* Pods-SimpleWeatherTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleWeatherTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F67FE759995AFF5EAB21DF0C0833BB39 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB684A50F56A1D03610D1EA60972C9EB /* Pods-SimpleWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE101983A80E445253547BF0B086D3D7 /* SBTUITestTunnel-Client.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SBTUITestTunnel-Client.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A0D7E27C55DE3A36DD64491910F2A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA9DD13C3DA6D80F706F427B3E69A4E /* CFNetwork.framework in Frameworks */,
+				ACFB28B4A8B2AC5120DE00315A37FF22 /* Foundation.framework in Frameworks */,
+				E89F8BEF86E107B8A31F63C7CBC0DF71 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34A679B109F2BF6534099357BC139ACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B8084A1723A014EA1F1F409FB20811 /* Foundation.framework in Frameworks */,
+				D2E938C2653A3E1055C9FF126AFAA2EE /* UIKit.framework in Frameworks */,
+				2436F2B2CA7623C3BEB9B7862FF3840B /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		510909A77F05BE5DCCB6A05A5D83C752 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E12CB105BA12D1CD257F3486C7D4C1B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AB38C0037F3F64E8C3B74DE7CD0C7BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C1B02BAF0D8BF621E907F8928B4E25 /* Foundation.framework in Frameworks */,
+				25E862C753D24A047C258F8122407E8F /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B734562265901341C1D90C2BD4CD6873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52F3E771F89EB74DB20E3974B996C05 /* Foundation.framework in Frameworks */,
+				42D43630B2DE8156AD386F1227CEC20A /* FXKeychain.framework in Frameworks */,
+				2CA7DBDB5EB6F59B550F550606FC4BB2 /* GCDWebServer.framework in Frameworks */,
+				4FCFA28632F1BFBF75EDADD5AE07B945 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D28DD87FB247C837504299BF0DF1F426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34AEF0B2B90403B9F0EB88F98317C447 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB1DE4DADBC5F783EB083BE2E7893743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1641A5DFD4CC388CE8E4613485E69275 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0517FF16B322D2EA6E22CF5F6764500D /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				2DDD1A7076229DC9F4ED6D04922E53A3 /* Core */,
+				C789BE8128AE51608836D400010581B5 /* Support Files */,
+			);
+			path = GCDWebServer;
+			sourceTree = "<group>";
+		};
+		16327F6D8D22FC24777654BE172C7DDA /* SBTUITestTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				9F819F358CA30E749868A0CD211F56E7 /* Client */,
+				DD0EB130CE4C01A116475941BF93FD2B /* Server */,
+				67A92B1EE91FE96038A310B5FD2C591F /* Support Files */,
+			);
+			path = SBTUITestTunnel;
+			sourceTree = "<group>";
+		};
+		2262D7335300C8FEBBA4FAF9BD4066BD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB89457271AFB1B2A0A3E3636E100376 /* FXKeychain.modulemap */,
+				7CF13FCB9B3E8B30B397D359BCA464CB /* FXKeychain.xcconfig */,
+				516A2771474E8CD7E4787D3F038F1768 /* FXKeychain-dummy.m */,
+				CFF8395ACD636EE95DA0AF2A342351BD /* FXKeychain-prefix.pch */,
+				A057D39E043ED0D950C9241698EF8394 /* FXKeychain-umbrella.h */,
+				B2E677E4D6AC95BF679F2E8A9AFE2BCE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FXKeychain";
+			sourceTree = "<group>";
+		};
+		2CEDEC45BC2D56754BEB8588BE38548B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D39E3AE1B48A6E5B292C78CDA198E31 /* Pods-SimpleWeather */,
+				2D016D6368DAE90B0FFBD9998DB60784 /* Pods-SimpleWeatherTests */,
+				49751876C88F7D818432019CE720058B /* Pods-SimpleWeatherUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2D016D6368DAE90B0FFBD9998DB60784 /* Pods-SimpleWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				06E7B32D3CE0684E01F43C65FAC5C9A5 /* Info.plist */,
+				953E226628E5A68E439BF9BD87D80891 /* Pods-SimpleWeatherTests.modulemap */,
+				D12216D90C54E585911E98307B146FE8 /* Pods-SimpleWeatherTests-acknowledgements.markdown */,
+				F6517FE3E1F3B482C0BEFD0D826F5B18 /* Pods-SimpleWeatherTests-acknowledgements.plist */,
+				50233708B101AB00723453C6C0588E9D /* Pods-SimpleWeatherTests-dummy.m */,
+				E30E07ED4644A1D3C293BCE994AA5598 /* Pods-SimpleWeatherTests-frameworks.sh */,
+				4103A7043731208427C4EF735E2A5624 /* Pods-SimpleWeatherTests-resources.sh */,
+				421706E630A32D44B375ED9B20B1D025 /* Pods-SimpleWeatherTests-umbrella.h */,
+				FB684A50F56A1D03610D1EA60972C9EB /* Pods-SimpleWeatherTests.debug.xcconfig */,
+				AC65333E84F6D7E3FA13292ECB459B50 /* Pods-SimpleWeatherTests.release.xcconfig */,
+			);
+			name = "Pods-SimpleWeatherTests";
+			path = "Target Support Files/Pods-SimpleWeatherTests";
+			sourceTree = "<group>";
+		};
+		2DDD1A7076229DC9F4ED6D04922E53A3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9B5B97D31BEEC8A9518303CEA224A68B /* GCDWebServer.h */,
+				38944C103B4520A36BF860EF67794CE8 /* GCDWebServer.m */,
+				85C292B96BF9A258732781AA9CF473ED /* GCDWebServerConnection.h */,
+				2263591F77E271F28BDA792A02344328 /* GCDWebServerConnection.m */,
+				33A0477BCA2C87FD30D0188B3AA13C68 /* GCDWebServerDataRequest.h */,
+				AE0A45C022D9013748072DF8340B1410 /* GCDWebServerDataRequest.m */,
+				1637936C9160E5047B82791E50E31994 /* GCDWebServerDataResponse.h */,
+				26FBF531E027E14D4A9998E34767C6FB /* GCDWebServerDataResponse.m */,
+				B41DADC1F3B0D196A05A42F6B5BB945B /* GCDWebServerErrorResponse.h */,
+				70F55E1605B4F69F915F24B81F0B4F5F /* GCDWebServerErrorResponse.m */,
+				B489C51D57E611AC75FD4F3A3CA5B7C8 /* GCDWebServerFileRequest.h */,
+				711888B60CFD985BE6B47E693B33FBE4 /* GCDWebServerFileRequest.m */,
+				677E3D66C418BB34232603156D5D9527 /* GCDWebServerFileResponse.h */,
+				9EF16DF4890AFBFD924C8DF31A730B38 /* GCDWebServerFileResponse.m */,
+				51382BFEDC04A4DD4D42BFCCF74B4B2B /* GCDWebServerFunctions.h */,
+				179B3BE97D65B841F676613032ACE484 /* GCDWebServerFunctions.m */,
+				A91CAEF9E6BF2C33934BF0D029D28078 /* GCDWebServerHTTPStatusCodes.h */,
+				18642257A3432FBDA403B8A0586152D6 /* GCDWebServerMultiPartFormRequest.h */,
+				C393E1503B8DF0A8A0ABF6EEAF953FF2 /* GCDWebServerMultiPartFormRequest.m */,
+				31749609AE28F7CF89ED610D676F1BD0 /* GCDWebServerPrivate.h */,
+				08FBA537C98ED95E7738A1ABCFE10E4E /* GCDWebServerRequest.h */,
+				00DB1897E2333DEF80639102D610DC68 /* GCDWebServerRequest.m */,
+				2DA57056479E3EA8F401165D2E298FE9 /* GCDWebServerResponse.h */,
+				E9026071339923AEDD3F68B684804E6C /* GCDWebServerResponse.m */,
+				E192D45D65FC093750E36BAB173BC62E /* GCDWebServerStreamedResponse.h */,
+				CF5467723B2606BD27E97713B425F599 /* GCDWebServerStreamedResponse.m */,
+				266140277E59EC0D1FA55601E463E2EB /* GCDWebServerURLEncodedFormRequest.h */,
+				C07579B1BEF19A27F3D74355B51E9307 /* GCDWebServerURLEncodedFormRequest.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		370224CA67677150ACA5B399C6E1C0B5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				23C0AAD81DC956DCE7B704471F196115 /* CFNetwork.framework */,
+				C7652E2BDBCB885B319EA91ED1523EBA /* Foundation.framework */,
+				1D471FCC2119B73064D3246DD58304A2 /* MobileCoreServices.framework */,
+				CB28FFB69F2EF243B5330C988A114D29 /* Security.framework */,
+				3610B7D1A24C2BC1AEFA07078AB49248 /* UIKit.framework */,
+				19C33503FCC9F57319CF0C6C72EFA218 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		401290B8422ECE1CC6F240AE5608B133 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				884E4A48FCC307753F22D0B795A955F4 /* FXKeychain */,
+				0517FF16B322D2EA6E22CF5F6764500D /* GCDWebServer */,
+				16327F6D8D22FC24777654BE172C7DDA /* SBTUITestTunnel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		49751876C88F7D818432019CE720058B /* Pods-SimpleWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24D1998CE16F2152699DE0BF9A59A489 /* Info.plist */,
+				29EC696413EDC80E499D4952E89AC8D4 /* Pods-SimpleWeatherUITests.modulemap */,
+				805B082A314292A4E02969F03E6D5C7A /* Pods-SimpleWeatherUITests-acknowledgements.markdown */,
+				E9FD282583EB38E55D128755B3D3D63E /* Pods-SimpleWeatherUITests-acknowledgements.plist */,
+				7610BC3C3B3DC061BD844248742A9400 /* Pods-SimpleWeatherUITests-dummy.m */,
+				624D79CFDD705CA2B4866C989898CC93 /* Pods-SimpleWeatherUITests-frameworks.sh */,
+				1B4682E2B40C5C33434397B03777C2F4 /* Pods-SimpleWeatherUITests-resources.sh */,
+				4E23DEB8894B89B378DCC63CC06F1F6D /* Pods-SimpleWeatherUITests-umbrella.h */,
+				A5289AED8837A879455081091E72B902 /* Pods-SimpleWeatherUITests.debug.xcconfig */,
+				17BDFEA98D8BE9CDCC5D574F89806EB9 /* Pods-SimpleWeatherUITests.release.xcconfig */,
+			);
+			name = "Pods-SimpleWeatherUITests";
+			path = "Target Support Files/Pods-SimpleWeatherUITests";
+			sourceTree = "<group>";
+		};
+		628B58A65B0348C07ACF952A57EBDEAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3394864C036E95B8F74725D6E8E19169 /* FXKeychain.framework */,
+				C34E7C062955E095EBD795FEB5B7FB3D /* GCDWebServer.framework */,
+				37DE303E171207F31C2418FA39D63AE9 /* Pods_SimpleWeather.framework */,
+				8677E9753FBB1457DBDEB84E3C67668B /* Pods_SimpleWeatherTests.framework */,
+				1906564F436F064701BC5A29E8BCF87F /* Pods_SimpleWeatherUITests.framework */,
+				17DD257EEF059506B1BBC89188FA11D2 /* SBTUITestTunnel.framework */,
+				08DA72D60D2ED7B09C5FDA7C8596C5A1 /* SBTUITestTunnel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67A92B1EE91FE96038A310B5FD2C591F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				515BDC8B9512E95D966F801DA11AF0E8 /* Info.plist */,
+				93A5DBF4E240504BF90A9EF3C0101B61 /* Info.plist */,
+				437A8BF7679F55380E71C414638124EA /* SBTUITestTunnel-Client.modulemap */,
+				FE101983A80E445253547BF0B086D3D7 /* SBTUITestTunnel-Client.xcconfig */,
+				BDFB2C0E7E396D86402A2B19197EF24A /* SBTUITestTunnel-Client-dummy.m */,
+				036F514E6A66917B5F55E7267CD4D81D /* SBTUITestTunnel-Client-prefix.pch */,
+				B9BB5F88FF500F95E18BC5977DF837B4 /* SBTUITestTunnel-Client-umbrella.h */,
+				3D091B5FC408F14FAF1381C73BB35A3E /* SBTUITestTunnel-Server.modulemap */,
+				B53D1D4CB12D38D5FB8F937915B4F586 /* SBTUITestTunnel-Server.xcconfig */,
+				DAD052261832FF6B6ACD05CA5F5B334D /* SBTUITestTunnel-Server-dummy.m */,
+				DDE90F7F828D020A2B09ACE8F2A206E4 /* SBTUITestTunnel-Server-prefix.pch */,
+				4076658BD5CC3295C8CC06E4F42EEA32 /* SBTUITestTunnel-Server-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SBTUITestTunnel-Client";
+			sourceTree = "<group>";
+		};
+		7D39E3AE1B48A6E5B292C78CDA198E31 /* Pods-SimpleWeather */ = {
+			isa = PBXGroup;
+			children = (
+				76A0FD5F16FFF6CB21074D135CEA8F1F /* Info.plist */,
+				63956D076E861DF9C91A36385ADDAC86 /* Pods-SimpleWeather.modulemap */,
+				049BD2582A0607EC824D0BD9A32C4EF4 /* Pods-SimpleWeather-acknowledgements.markdown */,
+				24E7BAF9AE16382F243ACEB9BA5FA4D7 /* Pods-SimpleWeather-acknowledgements.plist */,
+				F616C2BD9A5150B5EAAC2166CB8040DB /* Pods-SimpleWeather-dummy.m */,
+				7FE2830096D6C0CFCB005011E6AAAE89 /* Pods-SimpleWeather-frameworks.sh */,
+				BE833B9D97D42172CF143E938283D47B /* Pods-SimpleWeather-resources.sh */,
+				D2CF4AAFE8D35AD543DA6C4A6670F3E2 /* Pods-SimpleWeather-umbrella.h */,
+				27E5CCF7C34DDF85ABB5F717AFD3A977 /* Pods-SimpleWeather.debug.xcconfig */,
+				9FA31AD86397EEA5E8CDB4A16D4B7D8B /* Pods-SimpleWeather.release.xcconfig */,
+			);
+			name = "Pods-SimpleWeather";
+			path = "Target Support Files/Pods-SimpleWeather";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				DEFD2F0EF0F2A3C3D1D7BFCFF0103409 /* Frameworks */,
+				401290B8422ECE1CC6F240AE5608B133 /* Pods */,
+				628B58A65B0348C07ACF952A57EBDEAA /* Products */,
+				2CEDEC45BC2D56754BEB8588BE38548B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		884E4A48FCC307753F22D0B795A955F4 /* FXKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				154D5F487BFD684DC4093492675F75E5 /* FXKeychain.h */,
+				BBA9FA5FB402A390E8153473554AB29E /* FXKeychain.m */,
+				2262D7335300C8FEBBA4FAF9BD4066BD /* Support Files */,
+			);
+			path = FXKeychain;
+			sourceTree = "<group>";
+		};
+		9F819F358CA30E749868A0CD211F56E7 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				F3A892FA90C7B3026B028BE18C680C74 /* NSString+SwiftDemangle.h */,
+				1654C2E3D62A10B52DB826BBB746F159 /* NSString+SwiftDemangle.m */,
+				3E40F31D36A2C5EEB47EE047EAE4B58A /* SBTUITunneledApplication.h */,
+				A5997DA3F0104D7658E361D59F5DBA55 /* SBTUITunneledApplication.m */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		C789BE8128AE51608836D400010581B5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				60E83A51BA4728874E79713F4D19C810 /* GCDWebServer.modulemap */,
+				96A931B8FECFC91A11F9CFE1B1343665 /* GCDWebServer.xcconfig */,
+				1683EA9A6D024609D1CBCB515B80D3EF /* GCDWebServer-dummy.m */,
+				315551E71C2D12BBE05514087B7EA067 /* GCDWebServer-prefix.pch */,
+				77792B38246C6B0AA1F3D34442B29601 /* GCDWebServer-umbrella.h */,
+				F67FE759995AFF5EAB21DF0C0833BB39 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GCDWebServer";
+			sourceTree = "<group>";
+		};
+		DD0EB130CE4C01A116475941BF93FD2B /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				C735DEF173E055E4E13EB6AFF619C6BF /* NSData+SHA1.h */,
+				5A6F2A4B300058DBF8EA2EDF23A4E146 /* NSData+SHA1.m */,
+				A79919618476E25B562A2F6CC238C58A /* NSURLRequest+HTTPBodyFix.h */,
+				36BA401BF0594EC5C7D5AEF2246C705A /* NSURLRequest+HTTPBodyFix.m */,
+				36F99F6A008E6B525F89C2D34E089970 /* NSURLRequest+SBTUITestTunnelMatch.h */,
+				B6E2BFB89DAA28E5878148D7633148DA /* NSURLRequest+SBTUITestTunnelMatch.m */,
+				D59604DEB80BEA0A2CB097261537ED75 /* NSURLSession+HTTPBodyFix.h */,
+				E0E6ED94E5CA4E7888E4ECA8274FD861 /* NSURLSession+HTTPBodyFix.m */,
+				BAA98FF900DAA1CB5B0353F8DCCC7914 /* NSURLSessionConfiguration+SBTUITestTunnel.h */,
+				856E21A9BA9C94009887201D61BBC464 /* NSURLSessionConfiguration+SBTUITestTunnel.m */,
+				A00D1D1845EFDF50F06C5F192C37839A /* SBTProxyStubResponse.h */,
+				0EA922073050C1E6BEE54C3D2F56059E /* SBTProxyStubResponse.m */,
+				6EC2576C082A4130ADE8CCE071439D19 /* SBTProxyURLProtocol.h */,
+				195D12440ADADEC4ABE71A63C35D7931 /* SBTProxyURLProtocol.m */,
+				76C13437532A87695F594D0AFD72BC36 /* SBTSwizzleHelpers.h */,
+				4F1876E03DAE0682DF5C06F8E7271548 /* SBTUITestTunnel.h */,
+				AF81157E644B46699E5CD5708CC1C980 /* SBTUITestTunnel.m */,
+				27FE2108D0CEE793BB5201C44A82CE4B /* SBTUITestTunnelServer.h */,
+				E33A87EB0ED2C0A4C6768B0BFCCB91B0 /* SBTUITestTunnelServer.m */,
+				37DD753C5231FB91DBDA3289798422AE /* UITextField+DisableAutocomplete.h */,
+				F5F4D1CB97B0493040AF9DDFB185AAA9 /* UITextField+DisableAutocomplete.m */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		DEFD2F0EF0F2A3C3D1D7BFCFF0103409 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B752BC7FAC42CA11DA3FE36E7EFB588 /* FXKeychain.framework */,
+				8A1DA34D7B4607BADF2E4F2C9AD3124D /* GCDWebServer.framework */,
+				370224CA67677150ACA5B399C6E1C0B5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		10E057B20715BE8556F33055F249996E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F97971B21A6C2E01607914244C35C518 /* FXKeychain-umbrella.h in Headers */,
+				98A9D14DA92148B8437097DCCD68E9BD /* FXKeychain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A200E096475E20419DFE95277BADFBC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C71909F6A871A33AF508921A9478AB /* NSString+SwiftDemangle.h in Headers */,
+				A79D8CFCAE534CB8C205088C3C6BA93C /* NSURLRequest+HTTPBodyFix.h in Headers */,
+				F89BEC81BC71738C536C0265276D0766 /* NSURLRequest+SBTUITestTunnelMatch.h in Headers */,
+				17DD22117BE7C1158B912E08F734BE23 /* SBTSwizzleHelpers.h in Headers */,
+				C07D4685F8C7E7F512285437BC23E056 /* SBTUITestTunnel-Client-umbrella.h in Headers */,
+				AA85434990510BB89681DC8D990455CC /* SBTUITestTunnel.h in Headers */,
+				52BB0F9E7DA50FFB2B1103F460D4C398 /* SBTUITunneledApplication.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3606E0C33071557D243C017CA219D02B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6855FCB86EFD12CAB904826958A3BDB9 /* NSData+SHA1.h in Headers */,
+				F11FD859C263C8014A3F5940C62C9E0F /* NSURLRequest+HTTPBodyFix.h in Headers */,
+				D2C5094635552F2D5EFDB8C9787AE4A7 /* NSURLRequest+SBTUITestTunnelMatch.h in Headers */,
+				115713603CE384804271BA83AD8D8F36 /* NSURLSession+HTTPBodyFix.h in Headers */,
+				53361C56003E41433F5CE431BADE29AB /* NSURLSessionConfiguration+SBTUITestTunnel.h in Headers */,
+				BDC99F57040DDE7D159CB35F423F926D /* SBTProxyStubResponse.h in Headers */,
+				679EADE89CB2C6AA8C9C0597BFA4ED8C /* SBTProxyURLProtocol.h in Headers */,
+				1E8416163C887D4F2CD124050C6D8879 /* SBTSwizzleHelpers.h in Headers */,
+				3CE2BDF865EAF4AB9E1430F3223BA3C0 /* SBTUITestTunnel-Server-umbrella.h in Headers */,
+				D69AC9CEAB1CC850310B9B4DFEFBF863 /* SBTUITestTunnel.h in Headers */,
+				F96DC4CAE759958473E965A9DDD68A49 /* SBTUITestTunnelServer.h in Headers */,
+				47016A24C4A1376D557F37F5E1C28CC7 /* UITextField+DisableAutocomplete.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C311A18B5367E57157D905E4711936 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96E949DE9327C7262D262317429D84D /* Pods-SimpleWeatherUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4F9D247F1ABA1B2ECD21B1F30D9DA7B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9290C1ACDB58769795B9C775ACFB6B /* Pods-SimpleWeatherTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC5EABBBE765DB87B0257AF7DFEE1053 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23C1F1F165AF50E9E79AE4C5562BC134 /* GCDWebServer-umbrella.h in Headers */,
+				19AF3610072169E5C7A80B92915E3273 /* GCDWebServer.h in Headers */,
+				CF1B9BAC37B0C927330B5C7254E113CE /* GCDWebServerConnection.h in Headers */,
+				A0918E9FA6D263258652239D2AFB816A /* GCDWebServerDataRequest.h in Headers */,
+				7B0FB7F36A0F9F654AA8F7462C7F42AD /* GCDWebServerDataResponse.h in Headers */,
+				04060C681A462B9520F3103D8E10543C /* GCDWebServerErrorResponse.h in Headers */,
+				71AB4705D4C7DC6239FD354E165CFA6F /* GCDWebServerFileRequest.h in Headers */,
+				3C9234AFD748DE044C4451441152555D /* GCDWebServerFileResponse.h in Headers */,
+				45B1AC6D576F206689D6606D1D640129 /* GCDWebServerFunctions.h in Headers */,
+				C98EB123870A1F48C40F6F80B595DF28 /* GCDWebServerHTTPStatusCodes.h in Headers */,
+				01372A113D4D24F730470D48C72D3AD6 /* GCDWebServerMultiPartFormRequest.h in Headers */,
+				5D5B87D738C8E66BC386C64AC16E258D /* GCDWebServerPrivate.h in Headers */,
+				8525D3F0B3825219D335DA68D211FACA /* GCDWebServerRequest.h in Headers */,
+				9374EC176619D9847D2426DF28E8A00A /* GCDWebServerResponse.h in Headers */,
+				D135BF17BF334ED905C703505250F777 /* GCDWebServerStreamedResponse.h in Headers */,
+				B46E9A3339883C2E91A703BBE41A9DD1 /* GCDWebServerURLEncodedFormRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5D020D2FB66406BE2A028E48F6F41F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E54C20F7DED0239E1894B520085C83C /* Pods-SimpleWeather-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		324F18602D5EF57D0C85927813C44D87 /* GCDWebServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D915E131D6A55E7EE373244493203920 /* Build configuration list for PBXNativeTarget "GCDWebServer" */;
+			buildPhases = (
+				833C8B6C561DDA125CC85B12DE082E58 /* Sources */,
+				0A0D7E27C55DE3A36DD64491910F2A9F /* Frameworks */,
+				BC5EABBBE765DB87B0257AF7DFEE1053 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCDWebServer;
+			productName = GCDWebServer;
+			productReference = C34E7C062955E095EBD795FEB5B7FB3D /* GCDWebServer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3F23D2CD1177B29F3C3ECA7798054221 /* Pods-SimpleWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 815E7E20BA88755E54712B290E39F338 /* Build configuration list for PBXNativeTarget "Pods-SimpleWeatherUITests" */;
+			buildPhases = (
+				256C2FB9AEEDC44958B24BD5C59704C1 /* Sources */,
+				FB1DE4DADBC5F783EB083BE2E7893743 /* Frameworks */,
+				55C311A18B5367E57157D905E4711936 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41E9BA5A5F3DC39618FB0859F6C08E21 /* PBXTargetDependency */,
+			);
+			name = "Pods-SimpleWeatherUITests";
+			productName = "Pods-SimpleWeatherUITests";
+			productReference = 1906564F436F064701BC5A29E8BCF87F /* Pods_SimpleWeatherUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		48CE9B7163691C8A15946ED19A8B1400 /* SBTUITestTunnel-Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8EB74E2B172A7867CB2E5C330129C72 /* Build configuration list for PBXNativeTarget "SBTUITestTunnel-Client" */;
+			buildPhases = (
+				D6D35252D9DACCC71FB64855A38E33B4 /* Sources */,
+				34A679B109F2BF6534099357BC139ACF /* Frameworks */,
+				1A200E096475E20419DFE95277BADFBC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SBTUITestTunnel-Client";
+			productName = "SBTUITestTunnel-Client";
+			productReference = 17DD257EEF059506B1BBC89188FA11D2 /* SBTUITestTunnel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		582B847DF14EAC0BA37EB59822D1B8E7 /* Pods-SimpleWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36DF67F415DA48C4E441B6AFC648AE21 /* Build configuration list for PBXNativeTarget "Pods-SimpleWeatherTests" */;
+			buildPhases = (
+				87887C7B38388807FB2BE692FD75C947 /* Sources */,
+				510909A77F05BE5DCCB6A05A5D83C752 /* Frameworks */,
+				A4F9D247F1ABA1B2ECD21B1F30D9DA7B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SimpleWeatherTests";
+			productName = "Pods-SimpleWeatherTests";
+			productReference = 8677E9753FBB1457DBDEB84E3C67668B /* Pods_SimpleWeatherTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9EAC923F6612C22C17B5E684054D3625 /* SBTUITestTunnel-Server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE9C34A9649D75525BB6FED5FDA0E521 /* Build configuration list for PBXNativeTarget "SBTUITestTunnel-Server" */;
+			buildPhases = (
+				A54A945EE8E062BC6938D49F73FC77F7 /* Sources */,
+				B734562265901341C1D90C2BD4CD6873 /* Frameworks */,
+				3606E0C33071557D243C017CA219D02B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				833DE6A8BBCB00ED914C8DE5ABFFD4AB /* PBXTargetDependency */,
+				3534E5BB3CC1B1FB479D02CD259E4BAC /* PBXTargetDependency */,
+			);
+			name = "SBTUITestTunnel-Server";
+			productName = "SBTUITestTunnel-Server";
+			productReference = 08DA72D60D2ED7B09C5FDA7C8596C5A1 /* SBTUITestTunnel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A9CA61A9740FC65B150A9AEB6404D828 /* FXKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C03BB3F089C5BD794DE05C6439B45C3A /* Build configuration list for PBXNativeTarget "FXKeychain" */;
+			buildPhases = (
+				E86C0F8FF7DD3FE1A1F544DFA05F7A21 /* Sources */,
+				8AB38C0037F3F64E8C3B74DE7CD0C7BC /* Frameworks */,
+				10E057B20715BE8556F33055F249996E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FXKeychain;
+			productName = FXKeychain;
+			productReference = 3394864C036E95B8F74725D6E8E19169 /* FXKeychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CDA3113137510DBADB4DCA850C0FDC1D /* Pods-SimpleWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C3312ED0029A0AF41CFFF20AC9DCB30 /* Build configuration list for PBXNativeTarget "Pods-SimpleWeather" */;
+			buildPhases = (
+				3AACF29883F9BEEDB9FF61C61031B190 /* Sources */,
+				D28DD87FB247C837504299BF0DF1F426 /* Frameworks */,
+				DD5D020D2FB66406BE2A028E48F6F41F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AC0AD67439CD657612AE2EFE3D65315 /* PBXTargetDependency */,
+				D4F4590E8649134875389ECE1A5834B7 /* PBXTargetDependency */,
+				9A53E166D1E59B5D47DC922825285CAA /* PBXTargetDependency */,
+			);
+			name = "Pods-SimpleWeather";
+			productName = "Pods-SimpleWeather";
+			productReference = 37DE303E171207F31C2418FA39D63AE9 /* Pods_SimpleWeather.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 628B58A65B0348C07ACF952A57EBDEAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9CA61A9740FC65B150A9AEB6404D828 /* FXKeychain */,
+				324F18602D5EF57D0C85927813C44D87 /* GCDWebServer */,
+				CDA3113137510DBADB4DCA850C0FDC1D /* Pods-SimpleWeather */,
+				582B847DF14EAC0BA37EB59822D1B8E7 /* Pods-SimpleWeatherTests */,
+				3F23D2CD1177B29F3C3ECA7798054221 /* Pods-SimpleWeatherUITests */,
+				48CE9B7163691C8A15946ED19A8B1400 /* SBTUITestTunnel-Client */,
+				9EAC923F6612C22C17B5E684054D3625 /* SBTUITestTunnel-Server */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		256C2FB9AEEDC44958B24BD5C59704C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A1A85EC30C828DF8DBCB65837C29FE /* Pods-SimpleWeatherUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AACF29883F9BEEDB9FF61C61031B190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E0913D40B5570029F96DCA84F0B3C0 /* Pods-SimpleWeather-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		833C8B6C561DDA125CC85B12DE082E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DDC1D35ED4C15DF5E36B9EC4801848 /* GCDWebServer-dummy.m in Sources */,
+				9173D385DF60D15EB25AADA2CC67E5D0 /* GCDWebServer.m in Sources */,
+				1350E334B7957E816F08653F32E8997E /* GCDWebServerConnection.m in Sources */,
+				D6E202D02C2A98C37BEE46FF6CA6BF6E /* GCDWebServerDataRequest.m in Sources */,
+				F854FD81B447DE7DE98EFA7B2A5E506B /* GCDWebServerDataResponse.m in Sources */,
+				AA9131066F17ABA0650142856587BD74 /* GCDWebServerErrorResponse.m in Sources */,
+				45D6A2EA63E73B5AEE717AA79D76ED66 /* GCDWebServerFileRequest.m in Sources */,
+				FBB491C9255AF72A742A73DB44770FDB /* GCDWebServerFileResponse.m in Sources */,
+				19308D893669B632EBED348D089628D1 /* GCDWebServerFunctions.m in Sources */,
+				2E7830EAF098D5FD1B455799E6652098 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				F8975051295364E3D166CB71CF96F185 /* GCDWebServerRequest.m in Sources */,
+				0C88FF55715753F0B53DBC6D4061AA16 /* GCDWebServerResponse.m in Sources */,
+				CFDB74CD4D874F1C4875390B66DDAAE8 /* GCDWebServerStreamedResponse.m in Sources */,
+				493200821CE09E919FD3371910BE497A /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87887C7B38388807FB2BE692FD75C947 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20B48EC0E935BFAF58FC7DE51E22D80 /* Pods-SimpleWeatherTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54A945EE8E062BC6938D49F73FC77F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205603C85460ED99178B1A903B284AF8 /* NSData+SHA1.m in Sources */,
+				C32E20DFB55C5E59443179FEDB888929 /* NSURLRequest+HTTPBodyFix.m in Sources */,
+				996F3401A7CF59D71599EEA9A1A0FF2C /* NSURLRequest+SBTUITestTunnelMatch.m in Sources */,
+				CA97C70EF4E8B8225A26F17A566B6EEF /* NSURLSession+HTTPBodyFix.m in Sources */,
+				29BEA4AD73BAA9F2002AFB5B262D61A8 /* NSURLSessionConfiguration+SBTUITestTunnel.m in Sources */,
+				B1C0B0DFB07DD0DB72AD02923182D671 /* SBTProxyStubResponse.m in Sources */,
+				2CEB62A439BB92315140F2BB44676F5C /* SBTProxyURLProtocol.m in Sources */,
+				9C8F47A878355CE7939BA0D5DF09343A /* SBTUITestTunnel-Server-dummy.m in Sources */,
+				4CC34558D46CFBE6B6D14B21E8FC07A1 /* SBTUITestTunnel.m in Sources */,
+				6A9AF44F611346E83CF1BFFB212AD5F4 /* SBTUITestTunnelServer.m in Sources */,
+				A97DEF8A0D6F7C8CF3980E6FB600DE24 /* UITextField+DisableAutocomplete.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6D35252D9DACCC71FB64855A38E33B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096BDE84E1D7D4886E15C3308601210C /* NSString+SwiftDemangle.m in Sources */,
+				3DD19ACB6E7C32E62DC7DA09BD06C0F5 /* NSURLRequest+HTTPBodyFix.m in Sources */,
+				490707551020CD8DD277EFD3707D4B57 /* NSURLRequest+SBTUITestTunnelMatch.m in Sources */,
+				4AB151F6A014EFC261624FEDB67F4624 /* SBTUITestTunnel-Client-dummy.m in Sources */,
+				37BCAD3D3B0579A308BF2C99A6B936DD /* SBTUITestTunnel.m in Sources */,
+				CEA10105CC29963377989035EF5C43C8 /* SBTUITunneledApplication.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86C0F8FF7DD3FE1A1F544DFA05F7A21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5147E3DA86BA0E51E9020928EBA890CC /* FXKeychain-dummy.m in Sources */,
+				DCA903860305E68B935C9B2CE0354B31 /* FXKeychain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3534E5BB3CC1B1FB479D02CD259E4BAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GCDWebServer;
+			target = 324F18602D5EF57D0C85927813C44D87 /* GCDWebServer */;
+			targetProxy = DDE51C1FB9F87AB8DCFDDB80ADD9B191 /* PBXContainerItemProxy */;
+		};
+		3AC0AD67439CD657612AE2EFE3D65315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FXKeychain;
+			target = A9CA61A9740FC65B150A9AEB6404D828 /* FXKeychain */;
+			targetProxy = BF01DC9AD526F98E27CF1DC02D49A914 /* PBXContainerItemProxy */;
+		};
+		41E9BA5A5F3DC39618FB0859F6C08E21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SBTUITestTunnel-Client";
+			target = 48CE9B7163691C8A15946ED19A8B1400 /* SBTUITestTunnel-Client */;
+			targetProxy = 07A152D201C4B791D7D126EE10CD02BC /* PBXContainerItemProxy */;
+		};
+		833DE6A8BBCB00ED914C8DE5ABFFD4AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FXKeychain;
+			target = A9CA61A9740FC65B150A9AEB6404D828 /* FXKeychain */;
+			targetProxy = CDC96F2373D98E50773D0EBFC479FDA0 /* PBXContainerItemProxy */;
+		};
+		9A53E166D1E59B5D47DC922825285CAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SBTUITestTunnel-Server";
+			target = 9EAC923F6612C22C17B5E684054D3625 /* SBTUITestTunnel-Server */;
+			targetProxy = DB8800BE28F27FBE59809B11F29BFBFC /* PBXContainerItemProxy */;
+		};
+		D4F4590E8649134875389ECE1A5834B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GCDWebServer;
+			target = 324F18602D5EF57D0C85927813C44D87 /* GCDWebServer */;
+			targetProxy = AC9746EAF9DCAB3BC82F96BACF1AA4C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0D5C0F6091301C0E5C1015FE3A641E3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17BDFEA98D8BE9CDCC5D574F89806EB9 /* Pods-SimpleWeatherUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleWeatherUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleWeatherUITests/Pods-SimpleWeatherUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SimpleWeatherUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1AD7F514157121D2A280B48717ABEF1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC65333E84F6D7E3FA13292ECB459B50 /* Pods-SimpleWeatherTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleWeatherTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleWeatherTests/Pods-SimpleWeatherTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SimpleWeatherTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3C28882044ECB16FE7864DCA3ABD06F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA31AD86397EEA5E8CDB4A16D4B7D8B /* Pods-SimpleWeather.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleWeather/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleWeather/Pods-SimpleWeather.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SimpleWeather;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		430BA3A7A1D9B52F90BF85EF1540E1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B53D1D4CB12D38D5FB8F937915B4F586 /* SBTUITestTunnel-Server.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SBTUITestTunnel-Server/SBTUITestTunnel-Server-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SBTUITestTunnel-Server/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SBTUITestTunnel-Server/SBTUITestTunnel-Server.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SBTUITestTunnel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6608ED9E7C0864A4946DF3AF62C4DF71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27E5CCF7C34DDF85ABB5F717AFD3A977 /* Pods-SimpleWeather.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleWeather/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleWeather/Pods-SimpleWeather.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SimpleWeather;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97308968542F0A1F7A40A4098314B773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A931B8FECFC91A11F9CFE1B1343665 /* GCDWebServer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9AF9D3A357C439FF408F0315B5CEEF95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE101983A80E445253547BF0B086D3D7 /* SBTUITestTunnel-Client.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SBTUITestTunnel-Client/SBTUITestTunnel-Client-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SBTUITestTunnel-Client/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SBTUITestTunnel-Client/SBTUITestTunnel-Client.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SBTUITestTunnel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9BF8F7A47A256112365386B416E5EE1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF13FCB9B3E8B30B397D359BCA464CB /* FXKeychain.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FXKeychain/FXKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FXKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FXKeychain/FXKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FXKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABFAD435A4403D0B5201EF8BEA3E4992 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB684A50F56A1D03610D1EA60972C9EB /* Pods-SimpleWeatherTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleWeatherTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleWeatherTests/Pods-SimpleWeatherTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SimpleWeatherTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ACEEA4693461E5ED365B326F7422EA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE101983A80E445253547BF0B086D3D7 /* SBTUITestTunnel-Client.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SBTUITestTunnel-Client/SBTUITestTunnel-Client-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SBTUITestTunnel-Client/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SBTUITestTunnel-Client/SBTUITestTunnel-Client.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SBTUITestTunnel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5EA58506BD7B24BDBA12CEB02058618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5289AED8837A879455081091E72B902 /* Pods-SimpleWeatherUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleWeatherUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleWeatherUITests/Pods-SimpleWeatherUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SimpleWeatherUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDCECD3DBFD4E919831C596BEF9D154F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A931B8FECFC91A11F9CFE1B1343665 /* GCDWebServer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D110CE2391F66C5FA639D8DE93081E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B53D1D4CB12D38D5FB8F937915B4F586 /* SBTUITestTunnel-Server.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SBTUITestTunnel-Server/SBTUITestTunnel-Server-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SBTUITestTunnel-Server/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SBTUITestTunnel-Server/SBTUITestTunnel-Server.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SBTUITestTunnel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F2256BF41E5701303148FDE847448E12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF13FCB9B3E8B30B397D359BCA464CB /* FXKeychain.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FXKeychain/FXKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FXKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FXKeychain/FXKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FXKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C3312ED0029A0AF41CFFF20AC9DCB30 /* Build configuration list for PBXNativeTarget "Pods-SimpleWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6608ED9E7C0864A4946DF3AF62C4DF71 /* Debug */,
+				3C28882044ECB16FE7864DCA3ABD06F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36DF67F415DA48C4E441B6AFC648AE21 /* Build configuration list for PBXNativeTarget "Pods-SimpleWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABFAD435A4403D0B5201EF8BEA3E4992 /* Debug */,
+				1AD7F514157121D2A280B48717ABEF1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		815E7E20BA88755E54712B290E39F338 /* Build configuration list for PBXNativeTarget "Pods-SimpleWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5EA58506BD7B24BDBA12CEB02058618 /* Debug */,
+				0D5C0F6091301C0E5C1015FE3A641E3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE9C34A9649D75525BB6FED5FDA0E521 /* Build configuration list for PBXNativeTarget "SBTUITestTunnel-Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430BA3A7A1D9B52F90BF85EF1540E1A1 /* Debug */,
+				D110CE2391F66C5FA639D8DE93081E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C03BB3F089C5BD794DE05C6439B45C3A /* Build configuration list for PBXNativeTarget "FXKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BF8F7A47A256112365386B416E5EE1D /* Debug */,
+				F2256BF41E5701303148FDE847448E12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8EB74E2B172A7867CB2E5C330129C72 /* Build configuration list for PBXNativeTarget "SBTUITestTunnel-Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACEEA4693461E5ED365B326F7422EA14 /* Debug */,
+				9AF9D3A357C439FF408F0315B5CEEF95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D915E131D6A55E7EE373244493203920 /* Build configuration list for PBXNativeTarget "GCDWebServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97308968542F0A1F7A40A4098314B773 /* Debug */,
+				CDCECD3DBFD4E919831C596BEF9D154F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
