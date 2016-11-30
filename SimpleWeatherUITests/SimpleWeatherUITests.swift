@@ -9,6 +9,8 @@
 import XCTest
 import SBTUITestTunnel
 
+fileprivate let LAST_CITY_KEY = "net.sashag.simple_weather.last_city"
+
 class SimpleWeatherUITests: XCTestCase {
     
     private var app: SBTUITunneledApplication!
@@ -24,7 +26,8 @@ class SimpleWeatherUITests: XCTestCase {
             SBTUITunneledApplicationLaunchOptionDisableUITextFieldAutocomplete
         ]
         app.launchTunnel(withOptions: launchOptions) {
-            // Perform initialization within the context of the test application if needed
+            // Perform initialization within the app context if needed
+            self.app.userDefaultsSetObject(NSString(string: "Jerusalem"), forKey: LAST_CITY_KEY)
         }
         app.monitorRequests(matching: SBTRequestMatch.url("api.openweathermap.org"))
         sleep(1)    // Yes, UI tests are flaky like that
@@ -101,6 +104,29 @@ class SimpleWeatherUITests: XCTestCase {
         let cells = app.tables.cells
         XCTAssertEqual(1, cells.count)
         XCTAssertFalse(cells.staticTexts["Error"].exists)
+    }
+    
+    func testAppStartsWithLastCityUserDefaultsValue() {
+        guard let city = app.textFields["city"].value as? String else {
+            XCTFail("City value in text field is missing")
+            return
+        }
+        XCTAssertEqual("Jerusalem", city)
+    }
+    
+    func testGetWeatherUpdatesLastCityUserDefaults() {
+        app.stubRequests(matching: SBTRequestMatch.url("api.openweathermap.org"),
+                         returnJsonDictionary: [:],     // Empty invalid dictionary
+                         returnCode: 200,
+                         responseTime: 0.2)
+        
+        enterCityAndTapGetWeather(city: "Yakutsk")
+        
+        guard let lastCity = app.userDefaultsObject(forKey: LAST_CITY_KEY) as? String else {
+            XCTFail("Last city was not saved in user defaults")
+            return
+        }
+        XCTAssertEqual("Yakutsk", lastCity)
     }
     
 }

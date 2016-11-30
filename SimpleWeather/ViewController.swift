@@ -57,7 +57,9 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        cityField.text = userDefaults.lastCity()
+        if let lastCity = userDefaults.lastCity() {
+            cityField.text = lastCity
+        }
     }
 
 }
